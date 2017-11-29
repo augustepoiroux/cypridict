@@ -3,15 +3,15 @@ from distutils.extension import Extension
 from Cython.Distutils import build_ext
 
 
-ext_modules = [Extension("minheap",
-                         ["cyminheap.pyx"],
-                         libraries=['minheap'],
+ext_modules = [Extension("maxheap",
+                         ["cymaxheap.pyx"],
+                         libraries=['maxheap'],
                          library_dirs=["/usr/local/lib"],
                          include_dirs=["/usr/local/include"],
                          runtime_library_dirs=["/usr/local/lib"])]
 
 setup(
-    name = "My minimal heap",
+    name = "Max heap",
     cmdclass = {'build_ext': build_ext},
     ext_modules = ext_modules
 )

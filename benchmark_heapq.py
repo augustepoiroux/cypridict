@@ -15,4 +15,4 @@ def test():
 
 
 t = timeit.Timer("benchmark_heapq.test()", "import benchmark_heapq")
-print "Pure python function, ", t.timeit(1), "secends."
+print "Pure python function, ", t.timeit(1), "seconds."

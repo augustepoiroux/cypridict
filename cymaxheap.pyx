@@ -1,24 +1,24 @@
-cimport cyminheap  # import the declaration in cyminheap.pxd
+cimport cymaxheap  # import the declaration in cymaxheap.pxd
 from libc.stdint cimport uint32_t  # import the integer type from C
 
 # define a struct that would be stored in the heap.
 # NOTE THAT all structs, defined in pyx files, would not be exported
 # with this module. Rather, as it serves as the parameter type of the
-# exported class, MinHeap in this case, it could be substituted by
+# exported class, MaxHeap in this case, it could be substituted by
 # a python dictionary object wherever it's required.
 # e.g. heap.push({"id":1, "price":10.0})
 cdef struct good_t:
     int id
-    float price
+    long double price
 
 # define the required C functions for comparison, copy and swap of good_t
 cdef int good_cmp(void *self, void *other):
     cdef good_t *pself = <good_t *>self
     cdef good_t *pother = <good_t *>other
     # NOTE THAT <*type*> is the special form for coercion in cython
-    if pself.price > pother.price:
+    if pself.price < pother.price:
         return 1
-    elif pself.price < pother.price:
+    elif pself.price > pother.price:
         return -1
     else:
         return 0
@@ -39,11 +39,11 @@ cdef void good_swap(void *self, void *other):
     return
 
 
-cdef class MinHeap:
+cdef class MaxHeap:
     """ Minimum heap container, a wrapper based on an implementation in C.
 
-    >>>from minheap import MinHeap
-    >>>heap=MinHeap()
+    >>>from maxheap import MaxHeap
+    >>>heap=MaxHeap()
     >>>heap.push({"id":1, "price":1.0})
     >>>heap.peek()
     {"id":1, "price":1.0}
@@ -54,25 +54,25 @@ cdef class MinHeap:
     >>>heap.pop()
     raise IndexError
     """
-    cdef cyminheap.minheap_t *_c_minheap
+    cdef cymaxheap.maxheap_t *_c_maxheap
 
     # cython garantees that __cinit__ would be called when a new
-    # MinHeap object is instantiated. Likewise, when this object
+    # MaxHeap object is instantiated. Likewise, when this object
     # is no longer referenced by any others, __dealloc__ would be
     # called before this object is reclaimed by python runtime
     def __cinit__(self):
         cdef uint32_t initial_number = 0
-        self._c_minheap = cyminheap.minheap_create(initial_number,
+        self._c_maxheap = cymaxheap.maxheap_create(initial_number,
                             sizeof(good_t),
-                            <cyminheap.compare>good_cmp,
-                            <cyminheap.copy>good_copy,
-                            <cyminheap.swap>good_swap)
-        if self._c_minheap is NULL:
+                            <cymaxheap.compare>good_cmp,
+                            <cymaxheap.copy>good_copy,
+                            <cymaxheap.swap>good_swap)
+        if self._c_maxheap is NULL:
             raise MemoryError()
 
     def __dealloc__(self):
-        if self._c_minheap is not NULL:
-            cyminheap.minheap_free(self._c_minheap)
+        if self._c_maxheap is not NULL:
+            cymaxheap.maxheap_free(self._c_maxheap)
 
     # since __cinit__ has already created the heap itself, no further
     # operations need to be done in __init__
@@ -80,13 +80,13 @@ cdef class MinHeap:
         pass
 
     cdef void _c_push(self, void *item):
-        cyminheap.minheap_push(self._c_minheap, item)
+        cymaxheap.maxheap_push(self._c_maxheap, item)
 
     cpdef push(self, good_t item):
         self._c_push(&item)
 
     cdef good_t * _c_pop(self):
-        return <good_t*>cyminheap.minheap_pop(self._c_minheap)
+        return <good_t*>cymaxheap.maxheap_pop(self._c_maxheap)
 
     # NOTE THAT by defining a function through 'def', it means it's a
     # regular python function. Therefore, whenever it encounters an exception
@@ -103,7 +103,7 @@ cdef class MinHeap:
             return data[0]
 
     cdef good_t * _c_peek(self):
-        return <good_t*>cyminheap.minheap_min(self._c_minheap)
+        return <good_t*>cymaxheap.maxheap_min(self._c_maxheap)
 
     def peek(self):
         cdef good_t *data = self._c_peek()

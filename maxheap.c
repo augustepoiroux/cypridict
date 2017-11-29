@@ -1,18 +1,18 @@
 #include "array.h"
-#include "minheap.h"
+#include "maxheap.h"
 
 #include <stdlib.h>
 
 
-static void shiftdown(minheap_t *heap, int start, int at);
-static void heapify(minheap_t *heap, int start);
-static void shiftup(minheap_t *heap, int start);
+static void shiftdown(maxheap_t *heap, int start, int at);
+static void heapify(maxheap_t *heap, int start);
+static void shiftup(maxheap_t *heap, int start);
 
-struct minheap_t *
-minheap_create(uint32_t n, size_t size, compare pfcmp, copy pfcpy, swap pfswp) {
-    minheap_t *heap;
+struct maxheap_t *
+maxheap_create(uint32_t n, size_t size, compare pfcmp, copy pfcpy, swap pfswp) {
+    maxheap_t *heap;
 
-    heap = malloc(sizeof(minheap_t));
+    heap = malloc(sizeof(maxheap_t));
     if (heap == NULL) return NULL;
     heap->comp = pfcmp;
     heap->cpy = pfcpy;
@@ -27,13 +27,13 @@ minheap_create(uint32_t n, size_t size, compare pfcmp, copy pfcpy, swap pfswp) {
 }
 
 void
-minheap_free(minheap_t *heap) {
+maxheap_free(maxheap_t *heap) {
     array_free(heap->array);
     free(heap);
 }
 
 int    
-minheap_push(minheap_t *heap, const void *new) {
+maxheap_push(maxheap_t *heap, const void *new) {
     void *item;
 
     if (heap->len == array_len(heap->array)) {
@@ -51,7 +51,7 @@ minheap_push(minheap_t *heap, const void *new) {
 }
 
 void *
-minheap_pop(minheap_t *heap) {
+maxheap_pop(maxheap_t *heap) {
     void * root;
     
     if (heap->len == 0) return NULL;
@@ -64,13 +64,13 @@ minheap_pop(minheap_t *heap) {
 }
 
 void *
-minheap_min(minheap_t *heap) {
+maxheap_min(maxheap_t *heap) {
     if (heap->len == 0) return NULL;
     return array_at(heap->array, 0);
 }
 
 static void
-shiftdown(minheap_t *heap, int start, int end) {
+shiftdown(maxheap_t *heap, int start, int end) {
     void *child, *parent;
     int i;  // index for the parent
 
@@ -90,7 +90,7 @@ shiftdown(minheap_t *heap, int start, int end) {
 }
 
 static void
-shiftup(minheap_t *heap, int start) {
+shiftup(maxheap_t *heap, int start) {
     int iend, istart, ichild, iright;
 
     iend = (int)heap->len;
@@ -111,7 +111,7 @@ shiftup(minheap_t *heap, int start) {
 }
 
 static void
-heapify(minheap_t *heap, int start) {
+heapify(maxheap_t *heap, int start) {
     int i;
 
     i = (int)(heap->len >> 2);

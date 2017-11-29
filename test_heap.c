@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/time.h>
-#include "minheap.h"
+#include "maxheap.h"
 
 typedef struct {
     int                 id;
@@ -73,25 +73,25 @@ main(int argc, char **argv) {
     int ntest, nfailure;
     struct timeval now;
     my_timer_t timer;
-    minheap_t * heap;
+    maxheap_t * heap;
 
     ntest = nfailure = 0;
 
     ntest++;
-    heap = minheap_create(0, sizeof(my_timer_t), id_cmp, timer_copy, timer_swap );
+    heap = maxheap_create(0, sizeof(my_timer_t), id_cmp, timer_copy, timer_swap );
     for(i=0; i<500; i++) {
         gettimeofday(&now, NULL);
         timer.id = 600-i;
         timer.time = now;
         //timer.time.tv_sec -= i;
-        minheap_push(heap, &timer);
+        maxheap_push(heap, &timer);
         fprintf(stdout,"push timer id:%d\n", timer.id);
         sleep(0);
     }
 
     my_timer_t * pop;
     int should_be = 101;
-    while((pop=minheap_pop(heap)) != NULL){
+    while((pop=maxheap_pop(heap)) != NULL){
     	assert(should_be++ == pop->id);
         fprintf(stdout, "current timer id:%d\n", pop->id);
     }

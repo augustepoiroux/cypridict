@@ -1,9 +1,9 @@
-import minheap
+import maxheap
 from random import random
 import timeit
 
 def test():
-	heap = minheap.MinHeap()
+	heap = maxheap.MaxHeap()
 	for i in xrange(100000):
 		heap.push({"id":i, "price":random()})
 	
@@ -14,5 +14,5 @@ def test():
 			break
 
 
-t = timeit.Timer("benchmark_minheap.test()", "import benchmark_minheap")
-print "Cython extension completed in, ", t.timeit(1), "secends."
+t = timeit.Timer("benchmark_maxheap.test()", "import benchmark_maxheap")
+print "Cython extension completed in, ", t.timeit(1), "seconds."

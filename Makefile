@@ -1,14 +1,14 @@
-# Makefile of libminheap.so
+# Makefile of libmaxheap.so
 #
 
 CC = gcc
 CFLAGS = -Wall -fPIC -O2 -m64
-OBJS = array.o minheap.o
-TARGET_LIB = libminheap.so
+OBJS = array.o maxheap.o
+TARGET_LIB = libmaxheap.so
 
-all: libminheap test_heap test_array
+all: libmaxheap test_heap test_array
 
-libminheap:$(OBJS)
+libmaxheap:$(OBJS)
 	$(CC) -shared -fPIC $(CFLAGS) -o $(TARGET_LIB) $(OBJS)
 
 test_heap:$(TARGET_LIB) test_heap.o
