@@ -27,5 +27,5 @@ cdef extern from "maxheap.h":
     void    maxheap_free(maxheap_t*)
     int     maxheap_push(maxheap_t*, void *)
     void    *maxheap_pop(maxheap_t*)
-    void    *maxheap_min(maxheap_t*)
+    void    *maxheap_max(maxheap_t*)
 

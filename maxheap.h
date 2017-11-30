@@ -20,6 +20,6 @@ struct maxheap_t *maxheap_create(uint32_t, size_t, compare, copy, swap);
 void maxheap_free(maxheap_t*);
 int maxheap_push(maxheap_t*, const void *);
 void *maxheap_pop(maxheap_t*);
-void *maxheap_min(maxheap_t*);
+void *maxheap_max(maxheap_t*);
 
 #endif

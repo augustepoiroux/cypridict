@@ -64,7 +64,7 @@ maxheap_pop(maxheap_t *heap) {
 }
 
 void *
-maxheap_min(maxheap_t *heap) {
+maxheap_max(maxheap_t *heap) {
     if (heap->len == 0) return NULL;
     return array_at(heap->array, 0);
 }
