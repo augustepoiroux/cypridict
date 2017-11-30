@@ -1,5 +1,4 @@
-
-
+.cache/
 *.swp
 *.o
 *.pyc
