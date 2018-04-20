@@ -54,13 +54,14 @@ cdef class priority_dict:
 		self._create_heap()
 
 	def __dealloc__(self):
-		self._dealloc_heap()
+		if self._c_maxheap is not NULL:
+			cypridict.maxheap_free(self._c_maxheap)
 
 	def __init__(self, priorities={}):
 		self.length = 0
 		self.priorities = priorities
 		if self.priorities != {}:
-			self._create_heap()
+			self._rebuild_heap()
 
 	cdef _create_heap(self):
 		cdef uint32_t initial_number = 0
@@ -137,3 +138,8 @@ cdef class priority_dict:
 	def build_dict(self, dict pris):
 		self.priorities = pris
 		self._rebuild_heap()
+
+	def delete(self):
+		self.priorities = {}
+		if self._c_maxheap is not NULL:
+			cypridict.maxheap_free(self._c_maxheap)

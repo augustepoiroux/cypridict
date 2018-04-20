@@ -11,7 +11,7 @@ ext_modules = [Extension("pridict",
                          runtime_library_dirs=["/usr/local/lib"])]
 
 setup(
-    name = "Prioritiy Dictionary build on a max heap.",
+    name = "Priority Dictionary build on a max heap.",
     cmdclass = {'build_ext': build_ext},
     ext_modules = ext_modules
 )
