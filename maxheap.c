@@ -3,7 +3,6 @@
 
 #include <stdlib.h>
 
-
 static void shiftdown(maxheap_t *heap, int start, int at);
 static void heapify(maxheap_t *heap, int start);
 static void shiftup(maxheap_t *heap, int start);

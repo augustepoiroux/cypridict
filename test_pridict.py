@@ -10,6 +10,7 @@ class TestPriDict(object):
 	@pytest.fixture
 	def pdict(self):
 		pdict = priority_dict()
+		assert pdict.heap_size() == 0
 		yield pdict
 		del pdict
 
