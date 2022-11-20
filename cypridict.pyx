@@ -1,4 +1,4 @@
-#cython: initializedcheck=False, nonecheck=False
+#cython: language_level=3, initializedcheck=False, nonecheck=False
 cimport cypridict  # import the declaration in cypridict.pxd
 from libc.stdint cimport uint32_t  # import the integer type from C
 
