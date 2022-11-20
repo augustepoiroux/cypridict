@@ -9,7 +9,9 @@
 # NOTE THAT if uint32_t is not imported explicitly, then the first parameter
 # in the following function maxheap_create(uint32_t, ...) would be regarded as
 # a normal python parameter, but not a parameter with uint32_t type.
+
 from libc.stdint cimport uint32_t
+
 
 # when import a custom header file, remember to add a 'extern' keyword.
 # And it's OK just to declare the struct name, but omit the details of

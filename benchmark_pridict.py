@@ -1,6 +1,7 @@
-import pridict
-from random import random
 import timeit
+from random import random
+
+import pridict
 
 
 def test():

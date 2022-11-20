@@ -1,6 +1,8 @@
 #cython: language_level=3, initializedcheck=False, nonecheck=False
-cimport cypridict  # import the declaration in cypridict.pxd
 from libc.stdint cimport uint32_t  # import the integer type from C
+
+cimport cypridict  # import the declaration in cypridict.pxd
+
 
 # define a struct that would be stored in the heap.
 # NOTE THAT all structs, defined in pyx files, would not be exported
@@ -85,7 +87,7 @@ cdef class priority_dict:
 		self._create_heap()
 		cdef tuple item
 		cdef good_t data
-		for item in self.priorities.iteritems():
+		for item in self.priorities.items():
 			data = {'id': item[0], 'priority': item[1]}
 			self._c_push(&data)
 		self.length = len(self.priorities)
@@ -136,4 +138,4 @@ cdef class priority_dict:
 		return self.length
 
 	def __iter__(self):
-		return self.priorities.iteritems()
+		return iter(self.priorities.items())
