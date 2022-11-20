@@ -1,7 +1,6 @@
 #cython: language_level=3, initializedcheck=False, nonecheck=False
-from libc.stdint cimport uint32_t  # import the integer type from C
-
 cimport cypridict  # import the declaration in cypridict.pxd
+from libc.stdint cimport uint32_t  # import the integer type from C
 
 
 # define a struct that would be stored in the heap.
