@@ -10,7 +10,7 @@ from libc.stdint cimport uint32_t  # import the integer type from C
 # a python dictionary object wherever it's required.
 # e.g. heap.push({"id":1, "priority":10.0})
 cdef struct good_t:
-	int id
+	long id
 	long double priority
 
 # define the required C functions for comparison, copy and swap of good_t
@@ -44,7 +44,7 @@ cdef void good_swap(void *self, void *other):
 cdef class priority_dict:
 
 	cdef cypridict.maxheap_t *_c_maxheap
-	cdef unsigned int length
+	cdef unsigned long length
 	cdef dict priorities
 
 	# cython guarantees that __cinit__ would be called when a new
