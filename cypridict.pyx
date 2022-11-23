@@ -130,6 +130,13 @@ cdef class priority_dict:
 		else:
 			return data[0].id
 
+	def peekval(self):
+		cdef good_t *data = self._c_peek()
+		if data is NULL:
+			return -1
+		else:
+			return data[0].priority
+
 	def __len__(self):
 		return len(self.priorities)
 
