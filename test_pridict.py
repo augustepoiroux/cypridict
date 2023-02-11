@@ -9,17 +9,16 @@ class TestPriDict:
     """
 
     @pytest.fixture
-    def pdict(self):
+    def pdict(self) -> priority_dict:
         pdict = priority_dict()
         assert pdict.heap_size() == 0
-        yield pdict
-        del pdict
+        return pdict
 
-    def test_peek(self, pdict):
+    def test_peek(self, pdict: priority_dict) -> None:
         pdict[1] = 1.0
         assert pdict.peek() == 1
 
-    def test_pop(self, pdict):
+    def test_pop(self, pdict: priority_dict) -> None:
         pdict[1] = 1.23456
         pdict[2] = 2.34567
         pdict[3] = 0.00
@@ -31,7 +30,7 @@ class TestPriDict:
         assert pdict.pop() == 3
         assert len(pdict) == 0
 
-    def test_replace(self, pdict):
+    def test_replace(self, pdict: priority_dict) -> None:
         pdict[1] = 1.23456
         pdict[2] = 2.34567
         pdict[3] = 0.00
@@ -41,7 +40,7 @@ class TestPriDict:
         assert pdict.pop() == 3
         assert pdict.pop() == -1
 
-    def test_get(self, pdict):
+    def test_get(self, pdict: priority_dict) -> None:
         pdict[1] = 1.23456
         pdict[2] = 2.34567
         pdict[3] = 0.00
@@ -50,7 +49,7 @@ class TestPriDict:
         assert py_dict[2] == 2.34567
         assert py_dict[3] == 0.00
 
-    def test_build(self):
+    def test_build(self) -> None:
         py_dict = {}
         py_dict[1] = 1.23456
         py_dict[2] = 2.34567
@@ -62,7 +61,7 @@ class TestPriDict:
         assert pdict.pop() == 1
         assert pdict.pop() == 3
 
-    def test_rebuild(self, pdict):
+    def test_rebuild(self, pdict: priority_dict) -> None:
         pdict[1] = 1.23456
         pdict[2] = 2.34567
         pdict[3] = 0.00
@@ -81,8 +80,8 @@ class TestPriDict:
         assert pdict.pop() == 2
         assert pdict.pop() == -1
 
-    def test_peek_empty_pdict(self, pdict):
+    def test_peek_empty_pdict(self, pdict: priority_dict) -> None:
         assert pdict.peek() == -1
 
-    def test_pop_empty_pdict(self, pdict):
+    def test_pop_empty_pdict(self, pdict: priority_dict) -> None:
         assert pdict.pop() == -1

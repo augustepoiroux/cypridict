@@ -8,6 +8,7 @@
 .cache/
 __init__.pyc
 __pycache__/
+.mypy_cache/
 build/
 .vscode/
 *.so

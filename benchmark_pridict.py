@@ -4,7 +4,7 @@ from random import random
 import pridict
 
 
-def test():
+def test() -> None:
     heap = pridict.priority_dict()
     for i in range(100000):
         heap[i] = random()
