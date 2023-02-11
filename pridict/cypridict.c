@@ -738,8 +738,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__pridict
-#define __PYX_HAVE_API__pridict
+#define __PYX_HAVE__pridict__cypridict
+#define __PYX_HAVE_API__pridict__cypridict
 /* Early includes */
 #include <stdint.h>
 #include "maxheap.h"
@@ -952,36 +952,36 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "src/pridict/cypridict.pyx",
+  "pridict/cypridict.pyx",
   "stringsource",
 };
 
 /*--- Type declarations ---*/
-struct __pyx_obj_7pridict_priority_dict;
-struct __pyx_t_7pridict_good_t;
+struct __pyx_obj_7pridict_9cypridict_priority_dict;
+struct __pyx_t_7pridict_9cypridict_good_t;
 
-/* "pridict.pyx":13
+/* "pridict/cypridict.pyx":13
  * # a python dictionary object wherever it's required.
  * # e.g. heap.push({"id":1, "priority":10.0})
  * cdef struct good_t:             # <<<<<<<<<<<<<<
  * 	unsigned long id
  * 	long double priority
  */
-struct __pyx_t_7pridict_good_t {
+struct __pyx_t_7pridict_9cypridict_good_t {
   unsigned long id;
   long double priority;
 };
 
-/* "pridict.pyx":45
+/* "pridict/cypridict.pyx":45
  * 
  * 
  * cdef class priority_dict:             # <<<<<<<<<<<<<<
  * 
  * 	cdef cypridict.maxheap_t *_c_maxheap
  */
-struct __pyx_obj_7pridict_priority_dict {
+struct __pyx_obj_7pridict_9cypridict_priority_dict {
   PyObject_HEAD
-  struct __pyx_vtabstruct_7pridict_priority_dict *__pyx_vtab;
+  struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *__pyx_vtab;
   maxheap_t *_c_maxheap;
   long length;
   PyObject *priorities;
@@ -989,15 +989,15 @@ struct __pyx_obj_7pridict_priority_dict {
 
 
 
-struct __pyx_vtabstruct_7pridict_priority_dict {
-  PyObject *(*_create_heap)(struct __pyx_obj_7pridict_priority_dict *);
-  PyObject *(*_dealloc_heap)(struct __pyx_obj_7pridict_priority_dict *);
-  PyObject *(*_rebuild_heap)(struct __pyx_obj_7pridict_priority_dict *);
-  void (*_c_push)(struct __pyx_obj_7pridict_priority_dict *, void *);
-  struct __pyx_t_7pridict_good_t *(*_c_pop)(struct __pyx_obj_7pridict_priority_dict *);
-  struct __pyx_t_7pridict_good_t *(*_c_peek)(struct __pyx_obj_7pridict_priority_dict *);
+struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict {
+  PyObject *(*_create_heap)(struct __pyx_obj_7pridict_9cypridict_priority_dict *);
+  PyObject *(*_dealloc_heap)(struct __pyx_obj_7pridict_9cypridict_priority_dict *);
+  PyObject *(*_rebuild_heap)(struct __pyx_obj_7pridict_9cypridict_priority_dict *);
+  void (*_c_push)(struct __pyx_obj_7pridict_9cypridict_priority_dict *, void *);
+  struct __pyx_t_7pridict_9cypridict_good_t *(*_c_pop)(struct __pyx_obj_7pridict_9cypridict_priority_dict *);
+  struct __pyx_t_7pridict_9cypridict_good_t *(*_c_peek)(struct __pyx_obj_7pridict_9cypridict_priority_dict *);
 };
-static struct __pyx_vtabstruct_7pridict_priority_dict *__pyx_vtabptr_7pridict_priority_dict;
+static struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *__pyx_vtabptr_7pridict_9cypridict_priority_dict;
 
 /* --- Runtime support code (head) --- */
 /* Refnanny.proto */
@@ -1422,27 +1422,25 @@ static int __Pyx_check_binary_version(void);
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
-static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto*/
-static PyObject *__pyx_f_7pridict_13priority_dict__dealloc_heap(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto*/
-static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto*/
-static void __pyx_f_7pridict_13priority_dict__c_push(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self, void *__pyx_v_item); /* proto*/
-static struct __pyx_t_7pridict_good_t *__pyx_f_7pridict_13priority_dict__c_pop(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto*/
-static struct __pyx_t_7pridict_good_t *__pyx_f_7pridict_13priority_dict__c_peek(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto*/
+static PyObject *__pyx_f_7pridict_9cypridict_13priority_dict__create_heap(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto*/
+static PyObject *__pyx_f_7pridict_9cypridict_13priority_dict__dealloc_heap(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto*/
+static PyObject *__pyx_f_7pridict_9cypridict_13priority_dict__rebuild_heap(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto*/
+static void __pyx_f_7pridict_9cypridict_13priority_dict__c_push(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self, void *__pyx_v_item); /* proto*/
+static struct __pyx_t_7pridict_9cypridict_good_t *__pyx_f_7pridict_9cypridict_13priority_dict__c_pop(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto*/
+static struct __pyx_t_7pridict_9cypridict_good_t *__pyx_f_7pridict_9cypridict_13priority_dict__c_peek(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto*/
 
 /* Module declarations from 'libc.stdint' */
 
 /* Module declarations from 'pridict.cypridict' */
+static PyTypeObject *__pyx_ptype_7pridict_9cypridict_priority_dict = 0;
+static int __pyx_f_7pridict_9cypridict_good_cmp(void *, void *); /*proto*/
+static void *__pyx_f_7pridict_9cypridict_good_copy(void *, void *); /*proto*/
+static void __pyx_f_7pridict_9cypridict_good_swap(void *, void *); /*proto*/
+#define __Pyx_MODULE_NAME "pridict.cypridict"
+extern int __pyx_module_is_main_pridict__cypridict;
+int __pyx_module_is_main_pridict__cypridict = 0;
 
-/* Module declarations from 'pridict' */
-static PyTypeObject *__pyx_ptype_7pridict_priority_dict = 0;
-static int __pyx_f_7pridict_good_cmp(void *, void *); /*proto*/
-static void *__pyx_f_7pridict_good_copy(void *, void *); /*proto*/
-static void __pyx_f_7pridict_good_swap(void *, void *); /*proto*/
-#define __Pyx_MODULE_NAME "pridict"
-extern int __pyx_module_is_main_pridict;
-int __pyx_module_is_main_pridict = 0;
-
-/* Implementation of 'pridict' */
+/* Implementation of 'pridict.cypridict' */
 static PyObject *__pyx_builtin_MemoryError;
 static PyObject *__pyx_builtin_TypeError;
 static const char __pyx_k_id[] = "id";
@@ -1483,26 +1481,26 @@ static PyObject *__pyx_n_s_reduce_ex;
 static PyObject *__pyx_n_s_setstate;
 static PyObject *__pyx_n_s_setstate_cython;
 static PyObject *__pyx_n_s_test;
-static int __pyx_pf_7pridict_13priority_dict___cinit__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static void __pyx_pf_7pridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self, PyObject *__pyx_v_priorities); /* proto */
-static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_val); /* proto */
-static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static Py_ssize_t __pyx_pf_7pridict_13priority_dict_14__len__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pridict_13priority_dict_16heap_size(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pridict_13priority_dict_18__iter__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pridict_13priority_dict_20__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_7pridict_priority_dict *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_7pridict_13priority_dict_22__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_7pridict_priority_dict *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_7pridict_priority_dict(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static int __pyx_pf_7pridict_9cypridict_13priority_dict___cinit__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static void __pyx_pf_7pridict_9cypridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static int __pyx_pf_7pridict_9cypridict_13priority_dict_4__init__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self, PyObject *__pyx_v_priorities); /* proto */
+static int __pyx_pf_7pridict_9cypridict_13priority_dict_6__setitem__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_val); /* proto */
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_8pop(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_10peek(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_12peekval(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static Py_ssize_t __pyx_pf_7pridict_9cypridict_13priority_dict_14__len__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_16heap_size(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_18__iter__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_20__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_22__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_7pridict_9cypridict_priority_dict(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static __Pyx_CachedCFunction __pyx_umethod_PyDict_Type_items = {0, &__pyx_n_s_items, 0, 0, 0};
 static PyObject *__pyx_int_neg_1;
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
 /* Late includes */
 
-/* "pridict.pyx":18
+/* "pridict/cypridict.pyx":18
  * 
  * # define the required C functions for comparison, copy and swap of good_t
  * cdef int good_cmp(void *self, void *other):             # <<<<<<<<<<<<<<
@@ -1510,33 +1508,33 @@ static PyObject *__pyx_tuple__2;
  * 	cdef good_t *pother = <good_t *>other
  */
 
-static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
-  struct __pyx_t_7pridict_good_t *__pyx_v_pself;
-  struct __pyx_t_7pridict_good_t *__pyx_v_pother;
+static int __pyx_f_7pridict_9cypridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
+  struct __pyx_t_7pridict_9cypridict_good_t *__pyx_v_pself;
+  struct __pyx_t_7pridict_9cypridict_good_t *__pyx_v_pother;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("good_cmp", 0);
 
-  /* "pridict.pyx":19
+  /* "pridict/cypridict.pyx":19
  * # define the required C functions for comparison, copy and swap of good_t
  * cdef int good_cmp(void *self, void *other):
  * 	cdef good_t *pself = <good_t *>self             # <<<<<<<<<<<<<<
  * 	cdef good_t *pother = <good_t *>other
  * 	# NOTE THAT <*type*> is the special form for coercion in cython
  */
-  __pyx_v_pself = ((struct __pyx_t_7pridict_good_t *)__pyx_v_self);
+  __pyx_v_pself = ((struct __pyx_t_7pridict_9cypridict_good_t *)__pyx_v_self);
 
-  /* "pridict.pyx":20
+  /* "pridict/cypridict.pyx":20
  * cdef int good_cmp(void *self, void *other):
  * 	cdef good_t *pself = <good_t *>self
  * 	cdef good_t *pother = <good_t *>other             # <<<<<<<<<<<<<<
  * 	# NOTE THAT <*type*> is the special form for coercion in cython
  * 	if pself.priority < pother.priority:
  */
-  __pyx_v_pother = ((struct __pyx_t_7pridict_good_t *)__pyx_v_other);
+  __pyx_v_pother = ((struct __pyx_t_7pridict_9cypridict_good_t *)__pyx_v_other);
 
-  /* "pridict.pyx":22
+  /* "pridict/cypridict.pyx":22
  * 	cdef good_t *pother = <good_t *>other
  * 	# NOTE THAT <*type*> is the special form for coercion in cython
  * 	if pself.priority < pother.priority:             # <<<<<<<<<<<<<<
@@ -1546,7 +1544,7 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
   __pyx_t_1 = ((__pyx_v_pself->priority < __pyx_v_pother->priority) != 0);
   if (__pyx_t_1) {
 
-    /* "pridict.pyx":23
+    /* "pridict/cypridict.pyx":23
  * 	# NOTE THAT <*type*> is the special form for coercion in cython
  * 	if pself.priority < pother.priority:
  * 		return 1             # <<<<<<<<<<<<<<
@@ -1556,7 +1554,7 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
     __pyx_r = 1;
     goto __pyx_L0;
 
-    /* "pridict.pyx":22
+    /* "pridict/cypridict.pyx":22
  * 	cdef good_t *pother = <good_t *>other
  * 	# NOTE THAT <*type*> is the special form for coercion in cython
  * 	if pself.priority < pother.priority:             # <<<<<<<<<<<<<<
@@ -1565,7 +1563,7 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
  */
   }
 
-  /* "pridict.pyx":24
+  /* "pridict/cypridict.pyx":24
  * 	if pself.priority < pother.priority:
  * 		return 1
  * 	elif pself.priority > pother.priority:             # <<<<<<<<<<<<<<
@@ -1575,7 +1573,7 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
   __pyx_t_1 = ((__pyx_v_pself->priority > __pyx_v_pother->priority) != 0);
   if (__pyx_t_1) {
 
-    /* "pridict.pyx":25
+    /* "pridict/cypridict.pyx":25
  * 		return 1
  * 	elif pself.priority > pother.priority:
  * 		return -1             # <<<<<<<<<<<<<<
@@ -1585,7 +1583,7 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
     __pyx_r = -1;
     goto __pyx_L0;
 
-    /* "pridict.pyx":24
+    /* "pridict/cypridict.pyx":24
  * 	if pself.priority < pother.priority:
  * 		return 1
  * 	elif pself.priority > pother.priority:             # <<<<<<<<<<<<<<
@@ -1594,7 +1592,7 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
  */
   }
 
-  /* "pridict.pyx":27
+  /* "pridict/cypridict.pyx":27
  * 		return -1
  * 	else:
  * 		return 0             # <<<<<<<<<<<<<<
@@ -1606,7 +1604,7 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
     goto __pyx_L0;
   }
 
-  /* "pridict.pyx":18
+  /* "pridict/cypridict.pyx":18
  * 
  * # define the required C functions for comparison, copy and swap of good_t
  * cdef int good_cmp(void *self, void *other):             # <<<<<<<<<<<<<<
@@ -1620,7 +1618,7 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
   return __pyx_r;
 }
 
-/* "pridict.pyx":29
+/* "pridict/cypridict.pyx":29
  * 		return 0
  * 
  * cdef void *good_copy(void *self, void *other):             # <<<<<<<<<<<<<<
@@ -1628,21 +1626,21 @@ static int __pyx_f_7pridict_good_cmp(void *__pyx_v_self, void *__pyx_v_other) {
  * 	# use some_pointer[0], instead of *some_pointer to reference
  */
 
-static void *__pyx_f_7pridict_good_copy(void *__pyx_v_self, void *__pyx_v_other) {
+static void *__pyx_f_7pridict_9cypridict_good_copy(void *__pyx_v_self, void *__pyx_v_other) {
   void *__pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("good_copy", 0);
 
-  /* "pridict.pyx":33
+  /* "pridict/cypridict.pyx":33
  * 	# use some_pointer[0], instead of *some_pointer to reference
  * 	# the pointer
  * 	(<good_t *>self)[0] = (<good_t *>other)[0]             # <<<<<<<<<<<<<<
  * 	return self
  * 
  */
-  (((struct __pyx_t_7pridict_good_t *)__pyx_v_self)[0]) = (((struct __pyx_t_7pridict_good_t *)__pyx_v_other)[0]);
+  (((struct __pyx_t_7pridict_9cypridict_good_t *)__pyx_v_self)[0]) = (((struct __pyx_t_7pridict_9cypridict_good_t *)__pyx_v_other)[0]);
 
-  /* "pridict.pyx":34
+  /* "pridict/cypridict.pyx":34
  * 	# the pointer
  * 	(<good_t *>self)[0] = (<good_t *>other)[0]
  * 	return self             # <<<<<<<<<<<<<<
@@ -1652,7 +1650,7 @@ static void *__pyx_f_7pridict_good_copy(void *__pyx_v_self, void *__pyx_v_other)
   __pyx_r = __pyx_v_self;
   goto __pyx_L0;
 
-  /* "pridict.pyx":29
+  /* "pridict/cypridict.pyx":29
  * 		return 0
  * 
  * cdef void *good_copy(void *self, void *other):             # <<<<<<<<<<<<<<
@@ -1666,7 +1664,7 @@ static void *__pyx_f_7pridict_good_copy(void *__pyx_v_self, void *__pyx_v_other)
   return __pyx_r;
 }
 
-/* "pridict.pyx":36
+/* "pridict/cypridict.pyx":36
  * 	return self
  * 
  * cdef void good_swap(void *self, void *other):             # <<<<<<<<<<<<<<
@@ -1674,13 +1672,13 @@ static void *__pyx_f_7pridict_good_copy(void *__pyx_v_self, void *__pyx_v_other)
  * 		return
  */
 
-static void __pyx_f_7pridict_good_swap(void *__pyx_v_self, void *__pyx_v_other) {
-  struct __pyx_t_7pridict_good_t __pyx_v_temp;
+static void __pyx_f_7pridict_9cypridict_good_swap(void *__pyx_v_self, void *__pyx_v_other) {
+  struct __pyx_t_7pridict_9cypridict_good_t __pyx_v_temp;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("good_swap", 0);
 
-  /* "pridict.pyx":37
+  /* "pridict/cypridict.pyx":37
  * 
  * cdef void good_swap(void *self, void *other):
  * 	if self == other:             # <<<<<<<<<<<<<<
@@ -1690,7 +1688,7 @@ static void __pyx_f_7pridict_good_swap(void *__pyx_v_self, void *__pyx_v_other) 
   __pyx_t_1 = ((__pyx_v_self == __pyx_v_other) != 0);
   if (__pyx_t_1) {
 
-    /* "pridict.pyx":38
+    /* "pridict/cypridict.pyx":38
  * cdef void good_swap(void *self, void *other):
  * 	if self == other:
  * 		return             # <<<<<<<<<<<<<<
@@ -1699,7 +1697,7 @@ static void __pyx_f_7pridict_good_swap(void *__pyx_v_self, void *__pyx_v_other) 
  */
     goto __pyx_L0;
 
-    /* "pridict.pyx":37
+    /* "pridict/cypridict.pyx":37
  * 
  * cdef void good_swap(void *self, void *other):
  * 	if self == other:             # <<<<<<<<<<<<<<
@@ -1708,34 +1706,34 @@ static void __pyx_f_7pridict_good_swap(void *__pyx_v_self, void *__pyx_v_other) 
  */
   }
 
-  /* "pridict.pyx":39
+  /* "pridict/cypridict.pyx":39
  * 	if self == other:
  * 		return
  * 	cdef good_t temp = (<good_t *>self)[0]             # <<<<<<<<<<<<<<
  * 	(<good_t *>self)[0] = (<good_t *>other)[0]
  * 	(<good_t *>other)[0] = temp
  */
-  __pyx_v_temp = (((struct __pyx_t_7pridict_good_t *)__pyx_v_self)[0]);
+  __pyx_v_temp = (((struct __pyx_t_7pridict_9cypridict_good_t *)__pyx_v_self)[0]);
 
-  /* "pridict.pyx":40
+  /* "pridict/cypridict.pyx":40
  * 		return
  * 	cdef good_t temp = (<good_t *>self)[0]
  * 	(<good_t *>self)[0] = (<good_t *>other)[0]             # <<<<<<<<<<<<<<
  * 	(<good_t *>other)[0] = temp
  * 	return
  */
-  (((struct __pyx_t_7pridict_good_t *)__pyx_v_self)[0]) = (((struct __pyx_t_7pridict_good_t *)__pyx_v_other)[0]);
+  (((struct __pyx_t_7pridict_9cypridict_good_t *)__pyx_v_self)[0]) = (((struct __pyx_t_7pridict_9cypridict_good_t *)__pyx_v_other)[0]);
 
-  /* "pridict.pyx":41
+  /* "pridict/cypridict.pyx":41
  * 	cdef good_t temp = (<good_t *>self)[0]
  * 	(<good_t *>self)[0] = (<good_t *>other)[0]
  * 	(<good_t *>other)[0] = temp             # <<<<<<<<<<<<<<
  * 	return
  * 
  */
-  (((struct __pyx_t_7pridict_good_t *)__pyx_v_other)[0]) = __pyx_v_temp;
+  (((struct __pyx_t_7pridict_9cypridict_good_t *)__pyx_v_other)[0]) = __pyx_v_temp;
 
-  /* "pridict.pyx":42
+  /* "pridict/cypridict.pyx":42
  * 	(<good_t *>self)[0] = (<good_t *>other)[0]
  * 	(<good_t *>other)[0] = temp
  * 	return             # <<<<<<<<<<<<<<
@@ -1744,7 +1742,7 @@ static void __pyx_f_7pridict_good_swap(void *__pyx_v_self, void *__pyx_v_other) 
  */
   goto __pyx_L0;
 
-  /* "pridict.pyx":36
+  /* "pridict/cypridict.pyx":36
  * 	return self
  * 
  * cdef void good_swap(void *self, void *other):             # <<<<<<<<<<<<<<
@@ -1757,7 +1755,7 @@ static void __pyx_f_7pridict_good_swap(void *__pyx_v_self, void *__pyx_v_other) 
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pridict.pyx":55
+/* "pridict/cypridict.pyx":55
  * 	# is no longer referenced by any others, __dealloc__ would be
  * 	# called before this object is reclaimed by python runtime
  * 	def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -1766,22 +1764,22 @@ static void __pyx_f_7pridict_good_swap(void *__pyx_v_self, void *__pyx_v_other) 
  */
 
 /* Python wrapper */
-static int __pyx_pw_7pridict_13priority_dict_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_7pridict_13priority_dict_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_7pridict_9cypridict_13priority_dict_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_7pridict_9cypridict_13priority_dict_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__ (wrapper)", 0);
   if (unlikely(PyTuple_GET_SIZE(__pyx_args) > 0)) {
     __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 0, 0, PyTuple_GET_SIZE(__pyx_args)); return -1;}
   if (unlikely(__pyx_kwds) && unlikely(PyDict_Size(__pyx_kwds) > 0) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__cinit__", 0))) return -1;
-  __pyx_r = __pyx_pf_7pridict_13priority_dict___cinit__(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict___cinit__(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_7pridict_13priority_dict___cinit__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static int __pyx_pf_7pridict_9cypridict_13priority_dict___cinit__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1790,18 +1788,18 @@ static int __pyx_pf_7pridict_13priority_dict___cinit__(struct __pyx_obj_7pridict
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "pridict.pyx":56
+  /* "pridict/cypridict.pyx":56
  * 	# called before this object is reclaimed by python runtime
  * 	def __cinit__(self):
  * 		self._create_heap()             # <<<<<<<<<<<<<<
  * 
  * 	def __dealloc__(self):
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_create_heap(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_create_heap(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pridict.pyx":55
+  /* "pridict/cypridict.pyx":55
  * 	# is no longer referenced by any others, __dealloc__ would be
  * 	# called before this object is reclaimed by python runtime
  * 	def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -1814,14 +1812,14 @@ static int __pyx_pf_7pridict_13priority_dict___cinit__(struct __pyx_obj_7pridict
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pridict.priority_dict.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pridict.pyx":58
+/* "pridict/cypridict.pyx":58
  * 		self._create_heap()
  * 
  * 	def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -1830,22 +1828,22 @@ static int __pyx_pf_7pridict_13priority_dict___cinit__(struct __pyx_obj_7pridict
  */
 
 /* Python wrapper */
-static void __pyx_pw_7pridict_13priority_dict_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
-static void __pyx_pw_7pridict_13priority_dict_3__dealloc__(PyObject *__pyx_v_self) {
+static void __pyx_pw_7pridict_9cypridict_13priority_dict_3__dealloc__(PyObject *__pyx_v_self); /*proto*/
+static void __pyx_pw_7pridict_9cypridict_13priority_dict_3__dealloc__(PyObject *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealloc__ (wrapper)", 0);
-  __pyx_pf_7pridict_13priority_dict_2__dealloc__(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_pf_7pridict_9cypridict_13priority_dict_2__dealloc__(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-static void __pyx_pf_7pridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static void __pyx_pf_7pridict_9cypridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealloc__", 0);
 
-  /* "pridict.pyx":59
+  /* "pridict/cypridict.pyx":59
  * 
  * 	def __dealloc__(self):
  * 		if self._c_maxheap is not NULL:             # <<<<<<<<<<<<<<
@@ -1855,7 +1853,7 @@ static void __pyx_pf_7pridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pri
   __pyx_t_1 = ((__pyx_v_self->_c_maxheap != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "pridict.pyx":60
+    /* "pridict/cypridict.pyx":60
  * 	def __dealloc__(self):
  * 		if self._c_maxheap is not NULL:
  * 			cypridict.maxheap_free(self._c_maxheap)             # <<<<<<<<<<<<<<
@@ -1864,7 +1862,7 @@ static void __pyx_pf_7pridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pri
  */
     maxheap_free(__pyx_v_self->_c_maxheap);
 
-    /* "pridict.pyx":61
+    /* "pridict/cypridict.pyx":61
  * 		if self._c_maxheap is not NULL:
  * 			cypridict.maxheap_free(self._c_maxheap)
  * 			self._c_maxheap = NULL             # <<<<<<<<<<<<<<
@@ -1873,7 +1871,7 @@ static void __pyx_pf_7pridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pri
  */
     __pyx_v_self->_c_maxheap = NULL;
 
-    /* "pridict.pyx":59
+    /* "pridict/cypridict.pyx":59
  * 
  * 	def __dealloc__(self):
  * 		if self._c_maxheap is not NULL:             # <<<<<<<<<<<<<<
@@ -1882,7 +1880,7 @@ static void __pyx_pf_7pridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pri
  */
   }
 
-  /* "pridict.pyx":58
+  /* "pridict/cypridict.pyx":58
  * 		self._create_heap()
  * 
  * 	def __dealloc__(self):             # <<<<<<<<<<<<<<
@@ -1894,7 +1892,7 @@ static void __pyx_pf_7pridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pri
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pridict.pyx":63
+/* "pridict/cypridict.pyx":63
  * 			self._c_maxheap = NULL
  * 
  * 	def __init__(self, priorities = None):             # <<<<<<<<<<<<<<
@@ -1903,8 +1901,8 @@ static void __pyx_pf_7pridict_13priority_dict_2__dealloc__(struct __pyx_obj_7pri
  */
 
 /* Python wrapper */
-static int __pyx_pw_7pridict_13priority_dict_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_7pridict_13priority_dict_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_7pridict_9cypridict_13priority_dict_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_7pridict_9cypridict_13priority_dict_5__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_priorities = 0;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
@@ -1950,18 +1948,18 @@ static int __pyx_pw_7pridict_13priority_dict_5__init__(PyObject *__pyx_v_self, P
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 63, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("pridict.priority_dict.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_4__init__(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self), __pyx_v_priorities);
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_4__init__(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self), __pyx_v_priorities);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self, PyObject *__pyx_v_priorities) {
+static int __pyx_pf_7pridict_9cypridict_13priority_dict_4__init__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self, PyObject *__pyx_v_priorities) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1972,7 +1970,7 @@ static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "pridict.pyx":64
+  /* "pridict/cypridict.pyx":64
  * 
  * 	def __init__(self, priorities = None):
  * 		self.length = 0             # <<<<<<<<<<<<<<
@@ -1981,7 +1979,7 @@ static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict
  */
   __pyx_v_self->length = 0;
 
-  /* "pridict.pyx":65
+  /* "pridict/cypridict.pyx":65
  * 	def __init__(self, priorities = None):
  * 		self.length = 0
  * 		self.priorities = {}             # <<<<<<<<<<<<<<
@@ -1996,7 +1994,7 @@ static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict
   __pyx_v_self->priorities = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pridict.pyx":66
+  /* "pridict/cypridict.pyx":66
  * 		self.length = 0
  * 		self.priorities = {}
  * 		if priorities is not None:             # <<<<<<<<<<<<<<
@@ -2007,7 +2005,7 @@ static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "pridict.pyx":67
+    /* "pridict/cypridict.pyx":67
  * 		self.priorities = {}
  * 		if priorities is not None:
  * 			self.priorities = priorities             # <<<<<<<<<<<<<<
@@ -2023,18 +2021,18 @@ static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict
     __pyx_v_self->priorities = ((PyObject*)__pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pridict.pyx":68
+    /* "pridict/cypridict.pyx":68
  * 		if priorities is not None:
  * 			self.priorities = priorities
  * 			self._rebuild_heap()             # <<<<<<<<<<<<<<
  * 
  * 	cdef _create_heap(self):
  */
-    __pyx_t_1 = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_rebuild_heap(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+    __pyx_t_1 = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_rebuild_heap(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pridict.pyx":66
+    /* "pridict/cypridict.pyx":66
  * 		self.length = 0
  * 		self.priorities = {}
  * 		if priorities is not None:             # <<<<<<<<<<<<<<
@@ -2043,7 +2041,7 @@ static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict
  */
   }
 
-  /* "pridict.pyx":63
+  /* "pridict/cypridict.pyx":63
  * 			self._c_maxheap = NULL
  * 
  * 	def __init__(self, priorities = None):             # <<<<<<<<<<<<<<
@@ -2056,14 +2054,14 @@ static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pridict.priority_dict.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pridict.pyx":70
+/* "pridict/cypridict.pyx":70
  * 			self._rebuild_heap()
  * 
  * 	cdef _create_heap(self):             # <<<<<<<<<<<<<<
@@ -2071,7 +2069,7 @@ static int __pyx_pf_7pridict_13priority_dict_4__init__(struct __pyx_obj_7pridict
  * 		self._c_maxheap = cypridict.maxheap_create(initial_number,
  */
 
-static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static PyObject *__pyx_f_7pridict_9cypridict_13priority_dict__create_heap(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   uint32_t __pyx_v_initial_number;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -2081,7 +2079,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_create_heap", 0);
 
-  /* "pridict.pyx":71
+  /* "pridict/cypridict.pyx":71
  * 
  * 	cdef _create_heap(self):
  * 		cdef uint32_t initial_number = 0             # <<<<<<<<<<<<<<
@@ -2090,16 +2088,16 @@ static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_
  */
   __pyx_v_initial_number = 0;
 
-  /* "pridict.pyx":72
+  /* "pridict/cypridict.pyx":72
  * 	cdef _create_heap(self):
  * 		cdef uint32_t initial_number = 0
  * 		self._c_maxheap = cypridict.maxheap_create(initial_number,             # <<<<<<<<<<<<<<
  * 							sizeof(good_t),
  * 							<cypridict.compare>good_cmp,
  */
-  __pyx_v_self->_c_maxheap = maxheap_create(__pyx_v_initial_number, (sizeof(struct __pyx_t_7pridict_good_t)), ((compare)__pyx_f_7pridict_good_cmp), ((copy)__pyx_f_7pridict_good_copy), ((swap)__pyx_f_7pridict_good_swap));
+  __pyx_v_self->_c_maxheap = maxheap_create(__pyx_v_initial_number, (sizeof(struct __pyx_t_7pridict_9cypridict_good_t)), ((compare)__pyx_f_7pridict_9cypridict_good_cmp), ((copy)__pyx_f_7pridict_9cypridict_good_copy), ((swap)__pyx_f_7pridict_9cypridict_good_swap));
 
-  /* "pridict.pyx":77
+  /* "pridict/cypridict.pyx":77
  * 							<cypridict.copy>good_copy,
  * 							<cypridict.swap>good_swap)
  * 		if self._c_maxheap is NULL:             # <<<<<<<<<<<<<<
@@ -2109,7 +2107,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_
   __pyx_t_1 = ((__pyx_v_self->_c_maxheap == NULL) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "pridict.pyx":78
+    /* "pridict/cypridict.pyx":78
  * 							<cypridict.swap>good_swap)
  * 		if self._c_maxheap is NULL:
  * 			raise MemoryError()             # <<<<<<<<<<<<<<
@@ -2118,7 +2116,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_
  */
     PyErr_NoMemory(); __PYX_ERR(0, 78, __pyx_L1_error)
 
-    /* "pridict.pyx":77
+    /* "pridict/cypridict.pyx":77
  * 							<cypridict.copy>good_copy,
  * 							<cypridict.swap>good_swap)
  * 		if self._c_maxheap is NULL:             # <<<<<<<<<<<<<<
@@ -2127,7 +2125,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_
  */
   }
 
-  /* "pridict.pyx":70
+  /* "pridict/cypridict.pyx":70
  * 			self._rebuild_heap()
  * 
  * 	cdef _create_heap(self):             # <<<<<<<<<<<<<<
@@ -2139,7 +2137,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_
   __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("pridict.priority_dict._create_heap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict._create_heap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2147,7 +2145,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "pridict.pyx":80
+/* "pridict/cypridict.pyx":80
  * 			raise MemoryError()
  * 
  * 	cdef _dealloc_heap(self):             # <<<<<<<<<<<<<<
@@ -2155,13 +2153,13 @@ static PyObject *__pyx_f_7pridict_13priority_dict__create_heap(struct __pyx_obj_
  * 			cypridict.maxheap_free(self._c_maxheap)
  */
 
-static PyObject *__pyx_f_7pridict_13priority_dict__dealloc_heap(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static PyObject *__pyx_f_7pridict_9cypridict_13priority_dict__dealloc_heap(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("_dealloc_heap", 0);
 
-  /* "pridict.pyx":81
+  /* "pridict/cypridict.pyx":81
  * 
  * 	cdef _dealloc_heap(self):
  * 		if self._c_maxheap is not NULL:             # <<<<<<<<<<<<<<
@@ -2171,7 +2169,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__dealloc_heap(struct __pyx_obj
   __pyx_t_1 = ((__pyx_v_self->_c_maxheap != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "pridict.pyx":82
+    /* "pridict/cypridict.pyx":82
  * 	cdef _dealloc_heap(self):
  * 		if self._c_maxheap is not NULL:
  * 			cypridict.maxheap_free(self._c_maxheap)             # <<<<<<<<<<<<<<
@@ -2180,7 +2178,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__dealloc_heap(struct __pyx_obj
  */
     maxheap_free(__pyx_v_self->_c_maxheap);
 
-    /* "pridict.pyx":83
+    /* "pridict/cypridict.pyx":83
  * 		if self._c_maxheap is not NULL:
  * 			cypridict.maxheap_free(self._c_maxheap)
  * 			self._c_maxheap = NULL             # <<<<<<<<<<<<<<
@@ -2189,7 +2187,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__dealloc_heap(struct __pyx_obj
  */
     __pyx_v_self->_c_maxheap = NULL;
 
-    /* "pridict.pyx":81
+    /* "pridict/cypridict.pyx":81
  * 
  * 	cdef _dealloc_heap(self):
  * 		if self._c_maxheap is not NULL:             # <<<<<<<<<<<<<<
@@ -2198,7 +2196,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__dealloc_heap(struct __pyx_obj
  */
   }
 
-  /* "pridict.pyx":80
+  /* "pridict/cypridict.pyx":80
  * 			raise MemoryError()
  * 
  * 	cdef _dealloc_heap(self):             # <<<<<<<<<<<<<<
@@ -2213,7 +2211,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__dealloc_heap(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "pridict.pyx":85
+/* "pridict/cypridict.pyx":85
  * 			self._c_maxheap = NULL
  * 
  * 	cdef _rebuild_heap(self):             # <<<<<<<<<<<<<<
@@ -2221,9 +2219,9 @@ static PyObject *__pyx_f_7pridict_13priority_dict__dealloc_heap(struct __pyx_obj
  * 		self._create_heap()
  */
 
-static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static PyObject *__pyx_f_7pridict_9cypridict_13priority_dict__rebuild_heap(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   PyObject *__pyx_v_item = 0;
-  struct __pyx_t_7pridict_good_t __pyx_v_data;
+  struct __pyx_t_7pridict_9cypridict_good_t __pyx_v_data;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -2232,7 +2230,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj
   int __pyx_t_4;
   PyObject *__pyx_t_5 = NULL;
   int __pyx_t_6;
-  struct __pyx_t_7pridict_good_t __pyx_t_7;
+  struct __pyx_t_7pridict_9cypridict_good_t __pyx_t_7;
   unsigned long __pyx_t_8;
   long double __pyx_t_9;
   int __pyx_lineno = 0;
@@ -2240,29 +2238,29 @@ static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("_rebuild_heap", 0);
 
-  /* "pridict.pyx":86
+  /* "pridict/cypridict.pyx":86
  * 
  * 	cdef _rebuild_heap(self):
  * 		self._dealloc_heap()             # <<<<<<<<<<<<<<
  * 		self._create_heap()
  * 		cdef tuple item
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_dealloc_heap(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_dealloc_heap(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pridict.pyx":87
+  /* "pridict/cypridict.pyx":87
  * 	cdef _rebuild_heap(self):
  * 		self._dealloc_heap()
  * 		self._create_heap()             # <<<<<<<<<<<<<<
  * 		cdef tuple item
  * 		cdef good_t data
  */
-  __pyx_t_1 = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_create_heap(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
+  __pyx_t_1 = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_create_heap(__pyx_v_self); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pridict.pyx":90
+  /* "pridict/cypridict.pyx":90
  * 		cdef tuple item
  * 		cdef good_t data
  * 		for item in self.priorities.items():             # <<<<<<<<<<<<<<
@@ -2288,7 +2286,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj
     __Pyx_XDECREF_SET(__pyx_v_item, ((PyObject*)__pyx_t_5));
     __pyx_t_5 = 0;
 
-    /* "pridict.pyx":91
+    /* "pridict/cypridict.pyx":91
  * 		cdef good_t data
  * 		for item in self.priorities.items():
  * 			data = {'id': item[0], 'priority': item[1]}             # <<<<<<<<<<<<<<
@@ -2315,18 +2313,18 @@ static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj
     __pyx_t_7.priority = __pyx_t_9;
     __pyx_v_data = __pyx_t_7;
 
-    /* "pridict.pyx":92
+    /* "pridict/cypridict.pyx":92
  * 		for item in self.priorities.items():
  * 			data = {'id': item[0], 'priority': item[1]}
  * 			self._c_push(&data)             # <<<<<<<<<<<<<<
  * 		self.length = len(self.priorities)
  * 
  */
-    ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_push(__pyx_v_self, (&__pyx_v_data));
+    ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_push(__pyx_v_self, (&__pyx_v_data));
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pridict.pyx":93
+  /* "pridict/cypridict.pyx":93
  * 			data = {'id': item[0], 'priority': item[1]}
  * 			self._c_push(&data)
  * 		self.length = len(self.priorities)             # <<<<<<<<<<<<<<
@@ -2343,7 +2341,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_self->length = __pyx_t_3;
 
-  /* "pridict.pyx":85
+  /* "pridict/cypridict.pyx":85
  * 			self._c_maxheap = NULL
  * 
  * 	cdef _rebuild_heap(self):             # <<<<<<<<<<<<<<
@@ -2357,7 +2355,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("pridict.priority_dict._rebuild_heap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict._rebuild_heap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_item);
@@ -2366,7 +2364,7 @@ static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj
   return __pyx_r;
 }
 
-/* "pridict.pyx":95
+/* "pridict/cypridict.pyx":95
  * 		self.length = len(self.priorities)
  * 
  * 	cdef void _c_push(self, void *item):             # <<<<<<<<<<<<<<
@@ -2374,11 +2372,11 @@ static PyObject *__pyx_f_7pridict_13priority_dict__rebuild_heap(struct __pyx_obj
  * 
  */
 
-static void __pyx_f_7pridict_13priority_dict__c_push(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self, void *__pyx_v_item) {
+static void __pyx_f_7pridict_9cypridict_13priority_dict__c_push(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self, void *__pyx_v_item) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_c_push", 0);
 
-  /* "pridict.pyx":96
+  /* "pridict/cypridict.pyx":96
  * 
  * 	cdef void _c_push(self, void *item):
  * 		cypridict.maxheap_push(self._c_maxheap, item)             # <<<<<<<<<<<<<<
@@ -2387,7 +2385,7 @@ static void __pyx_f_7pridict_13priority_dict__c_push(struct __pyx_obj_7pridict_p
  */
   (void)(maxheap_push(__pyx_v_self->_c_maxheap, __pyx_v_item));
 
-  /* "pridict.pyx":95
+  /* "pridict/cypridict.pyx":95
  * 		self.length = len(self.priorities)
  * 
  * 	cdef void _c_push(self, void *item):             # <<<<<<<<<<<<<<
@@ -2399,7 +2397,7 @@ static void __pyx_f_7pridict_13priority_dict__c_push(struct __pyx_obj_7pridict_p
   __Pyx_RefNannyFinishContext();
 }
 
-/* "pridict.pyx":98
+/* "pridict/cypridict.pyx":98
  * 		cypridict.maxheap_push(self._c_maxheap, item)
  * 
  * 	def __setitem__(self, key, val):             # <<<<<<<<<<<<<<
@@ -2408,23 +2406,23 @@ static void __pyx_f_7pridict_13priority_dict__c_push(struct __pyx_obj_7pridict_p
  */
 
 /* Python wrapper */
-static int __pyx_pw_7pridict_13priority_dict_7__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_val); /*proto*/
-static int __pyx_pw_7pridict_13priority_dict_7__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_val) {
+static int __pyx_pw_7pridict_9cypridict_13priority_dict_7__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_val); /*proto*/
+static int __pyx_pw_7pridict_9cypridict_13priority_dict_7__setitem__(PyObject *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_val) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setitem__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_6__setitem__(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self), ((PyObject *)__pyx_v_key), ((PyObject *)__pyx_v_val));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_6__setitem__(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self), ((PyObject *)__pyx_v_key), ((PyObject *)__pyx_v_val));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_val) {
-  struct __pyx_t_7pridict_good_t __pyx_v_item;
+static int __pyx_pf_7pridict_9cypridict_13priority_dict_6__setitem__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self, PyObject *__pyx_v_key, PyObject *__pyx_v_val) {
+  struct __pyx_t_7pridict_9cypridict_good_t __pyx_v_item;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
-  struct __pyx_t_7pridict_good_t __pyx_t_1;
+  struct __pyx_t_7pridict_9cypridict_good_t __pyx_t_1;
   unsigned long __pyx_t_2;
   long double __pyx_t_3;
   PyObject *__pyx_t_4 = NULL;
@@ -2435,7 +2433,7 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__setitem__", 0);
 
-  /* "pridict.pyx":99
+  /* "pridict/cypridict.pyx":99
  * 
  * 	def __setitem__(self, key, val):
  * 		self.priorities[key] = val             # <<<<<<<<<<<<<<
@@ -2448,7 +2446,7 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
   }
   if (unlikely(PyDict_SetItem(__pyx_v_self->priorities, __pyx_v_key, __pyx_v_val) < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
 
-  /* "pridict.pyx":100
+  /* "pridict/cypridict.pyx":100
  * 	def __setitem__(self, key, val):
  * 		self.priorities[key] = val
  * 		cdef good_t item = {'id': key, 'priority': val}             # <<<<<<<<<<<<<<
@@ -2461,7 +2459,7 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
   __pyx_t_1.priority = __pyx_t_3;
   __pyx_v_item = __pyx_t_1;
 
-  /* "pridict.pyx":101
+  /* "pridict/cypridict.pyx":101
  * 		self.priorities[key] = val
  * 		cdef good_t item = {'id': key, 'priority': val}
  * 		if self.length < 2*len(self.priorities):             # <<<<<<<<<<<<<<
@@ -2479,16 +2477,16 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
   __pyx_t_6 = ((__pyx_v_self->length < (2 * __pyx_t_5)) != 0);
   if (__pyx_t_6) {
 
-    /* "pridict.pyx":102
+    /* "pridict/cypridict.pyx":102
  * 		cdef good_t item = {'id': key, 'priority': val}
  * 		if self.length < 2*len(self.priorities):
  * 			self._c_push(&item)             # <<<<<<<<<<<<<<
  * 		else:
  * 			# When the heap grows larger than 2 * len(self), we rebuild it
  */
-    ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_push(__pyx_v_self, (&__pyx_v_item));
+    ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_push(__pyx_v_self, (&__pyx_v_item));
 
-    /* "pridict.pyx":101
+    /* "pridict/cypridict.pyx":101
  * 		self.priorities[key] = val
  * 		cdef good_t item = {'id': key, 'priority': val}
  * 		if self.length < 2*len(self.priorities):             # <<<<<<<<<<<<<<
@@ -2498,7 +2496,7 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
     goto __pyx_L3;
   }
 
-  /* "pridict.pyx":106
+  /* "pridict/cypridict.pyx":106
  * 			# When the heap grows larger than 2 * len(self), we rebuild it
  * 			# from scratch to avoid wasting too much memory.
  * 			self._rebuild_heap()             # <<<<<<<<<<<<<<
@@ -2506,13 +2504,13 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
  * 
  */
   /*else*/ {
-    __pyx_t_4 = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_rebuild_heap(__pyx_v_self); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 106, __pyx_L1_error)
+    __pyx_t_4 = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_rebuild_heap(__pyx_v_self); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __pyx_L3:;
 
-  /* "pridict.pyx":107
+  /* "pridict/cypridict.pyx":107
  * 			# from scratch to avoid wasting too much memory.
  * 			self._rebuild_heap()
  * 		self.length += 1             # <<<<<<<<<<<<<<
@@ -2521,7 +2519,7 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
  */
   __pyx_v_self->length = (__pyx_v_self->length + 1);
 
-  /* "pridict.pyx":98
+  /* "pridict/cypridict.pyx":98
  * 		cypridict.maxheap_push(self._c_maxheap, item)
  * 
  * 	def __setitem__(self, key, val):             # <<<<<<<<<<<<<<
@@ -2534,14 +2532,14 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("pridict.priority_dict.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.__setitem__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pridict.pyx":109
+/* "pridict/cypridict.pyx":109
  * 		self.length += 1
  * 
  * 	cdef good_t * _c_pop(self):             # <<<<<<<<<<<<<<
@@ -2549,22 +2547,22 @@ static int __pyx_pf_7pridict_13priority_dict_6__setitem__(struct __pyx_obj_7prid
  * 
  */
 
-static struct __pyx_t_7pridict_good_t *__pyx_f_7pridict_13priority_dict__c_pop(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
-  struct __pyx_t_7pridict_good_t *__pyx_r;
+static struct __pyx_t_7pridict_9cypridict_good_t *__pyx_f_7pridict_9cypridict_13priority_dict__c_pop(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
+  struct __pyx_t_7pridict_9cypridict_good_t *__pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_c_pop", 0);
 
-  /* "pridict.pyx":110
+  /* "pridict/cypridict.pyx":110
  * 
  * 	cdef good_t * _c_pop(self):
  * 		return <good_t*>cypridict.maxheap_pop(self._c_maxheap)             # <<<<<<<<<<<<<<
  * 
  * 	def pop(self):
  */
-  __pyx_r = ((struct __pyx_t_7pridict_good_t *)maxheap_pop(__pyx_v_self->_c_maxheap));
+  __pyx_r = ((struct __pyx_t_7pridict_9cypridict_good_t *)maxheap_pop(__pyx_v_self->_c_maxheap));
   goto __pyx_L0;
 
-  /* "pridict.pyx":109
+  /* "pridict/cypridict.pyx":109
  * 		self.length += 1
  * 
  * 	cdef good_t * _c_pop(self):             # <<<<<<<<<<<<<<
@@ -2578,7 +2576,7 @@ static struct __pyx_t_7pridict_good_t *__pyx_f_7pridict_13priority_dict__c_pop(s
   return __pyx_r;
 }
 
-/* "pridict.pyx":112
+/* "pridict/cypridict.pyx":112
  * 		return <good_t*>cypridict.maxheap_pop(self._c_maxheap)
  * 
  * 	def pop(self):             # <<<<<<<<<<<<<<
@@ -2587,20 +2585,20 @@ static struct __pyx_t_7pridict_good_t *__pyx_f_7pridict_13priority_dict__c_pop(s
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pridict_13priority_dict_9pop(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_7pridict_13priority_dict_9pop(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_9pop(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_9pop(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("pop (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_8pop(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_8pop(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
-  struct __pyx_t_7pridict_good_t *__pyx_v_data;
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_8pop(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
+  struct __pyx_t_7pridict_9cypridict_good_t *__pyx_v_data;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -2614,16 +2612,16 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("pop", 0);
 
-  /* "pridict.pyx":113
+  /* "pridict/cypridict.pyx":113
  * 
  * 	def pop(self):
  * 		cdef good_t *data = self._c_pop()             # <<<<<<<<<<<<<<
  * 		if data is NULL:
  * 			return -1
  */
-  __pyx_v_data = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_pop(__pyx_v_self);
+  __pyx_v_data = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_pop(__pyx_v_self);
 
-  /* "pridict.pyx":114
+  /* "pridict/cypridict.pyx":114
  * 	def pop(self):
  * 		cdef good_t *data = self._c_pop()
  * 		if data is NULL:             # <<<<<<<<<<<<<<
@@ -2633,7 +2631,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
   __pyx_t_1 = ((__pyx_v_data == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "pridict.pyx":115
+    /* "pridict/cypridict.pyx":115
  * 		cdef good_t *data = self._c_pop()
  * 		if data is NULL:
  * 			return -1             # <<<<<<<<<<<<<<
@@ -2645,7 +2643,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
     __pyx_r = __pyx_int_neg_1;
     goto __pyx_L0;
 
-    /* "pridict.pyx":114
+    /* "pridict/cypridict.pyx":114
  * 	def pop(self):
  * 		cdef good_t *data = self._c_pop()
  * 		if data is NULL:             # <<<<<<<<<<<<<<
@@ -2654,7 +2652,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
  */
   }
 
-  /* "pridict.pyx":116
+  /* "pridict/cypridict.pyx":116
  * 		if data is NULL:
  * 			return -1
  * 		while (data[0].id not in self.priorities) or (self.priorities[data[0].id] != data[0].priority):             # <<<<<<<<<<<<<<
@@ -2696,16 +2694,16 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
     __pyx_L6_bool_binop_done:;
     if (!__pyx_t_1) break;
 
-    /* "pridict.pyx":117
+    /* "pridict/cypridict.pyx":117
  * 			return -1
  * 		while (data[0].id not in self.priorities) or (self.priorities[data[0].id] != data[0].priority):
  * 			data = self._c_pop()             # <<<<<<<<<<<<<<
  * 			if data is NULL:
  * 				return -1
  */
-    __pyx_v_data = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_pop(__pyx_v_self);
+    __pyx_v_data = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_pop(__pyx_v_self);
 
-    /* "pridict.pyx":118
+    /* "pridict/cypridict.pyx":118
  * 		while (data[0].id not in self.priorities) or (self.priorities[data[0].id] != data[0].priority):
  * 			data = self._c_pop()
  * 			if data is NULL:             # <<<<<<<<<<<<<<
@@ -2715,7 +2713,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
     __pyx_t_1 = ((__pyx_v_data == NULL) != 0);
     if (__pyx_t_1) {
 
-      /* "pridict.pyx":119
+      /* "pridict/cypridict.pyx":119
  * 			data = self._c_pop()
  * 			if data is NULL:
  * 				return -1             # <<<<<<<<<<<<<<
@@ -2727,7 +2725,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
       __pyx_r = __pyx_int_neg_1;
       goto __pyx_L0;
 
-      /* "pridict.pyx":118
+      /* "pridict/cypridict.pyx":118
  * 		while (data[0].id not in self.priorities) or (self.priorities[data[0].id] != data[0].priority):
  * 			data = self._c_pop()
  * 			if data is NULL:             # <<<<<<<<<<<<<<
@@ -2737,7 +2735,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
     }
   }
 
-  /* "pridict.pyx":120
+  /* "pridict/cypridict.pyx":120
  * 			if data is NULL:
  * 				return -1
  * 		self.length -= 1             # <<<<<<<<<<<<<<
@@ -2746,7 +2744,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
  */
   __pyx_v_self->length = (__pyx_v_self->length - 1);
 
-  /* "pridict.pyx":121
+  /* "pridict/cypridict.pyx":121
  * 				return -1
  * 		self.length -= 1
  * 		del self.priorities[data.id]             # <<<<<<<<<<<<<<
@@ -2762,7 +2760,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
   if (unlikely(PyDict_DelItem(__pyx_v_self->priorities, __pyx_t_6) < 0)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-  /* "pridict.pyx":122
+  /* "pridict/cypridict.pyx":122
  * 		self.length -= 1
  * 		del self.priorities[data.id]
  * 		return data[0].id             # <<<<<<<<<<<<<<
@@ -2776,7 +2774,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
   __pyx_t_6 = 0;
   goto __pyx_L0;
 
-  /* "pridict.pyx":112
+  /* "pridict/cypridict.pyx":112
  * 		return <good_t*>cypridict.maxheap_pop(self._c_maxheap)
  * 
  * 	def pop(self):             # <<<<<<<<<<<<<<
@@ -2789,7 +2787,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("pridict.priority_dict.pop", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.pop", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2797,7 +2795,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
   return __pyx_r;
 }
 
-/* "pridict.pyx":124
+/* "pridict/cypridict.pyx":124
  * 		return data[0].id
  * 
  * 	cdef good_t * _c_peek(self):             # <<<<<<<<<<<<<<
@@ -2805,22 +2803,22 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_8pop(struct __pyx_obj_7pridic
  * 
  */
 
-static struct __pyx_t_7pridict_good_t *__pyx_f_7pridict_13priority_dict__c_peek(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
-  struct __pyx_t_7pridict_good_t *__pyx_r;
+static struct __pyx_t_7pridict_9cypridict_good_t *__pyx_f_7pridict_9cypridict_13priority_dict__c_peek(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
+  struct __pyx_t_7pridict_9cypridict_good_t *__pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_c_peek", 0);
 
-  /* "pridict.pyx":125
+  /* "pridict/cypridict.pyx":125
  * 
  * 	cdef good_t * _c_peek(self):
  * 		return <good_t*>cypridict.maxheap_max(self._c_maxheap)             # <<<<<<<<<<<<<<
  * 
  * 	def peek(self):
  */
-  __pyx_r = ((struct __pyx_t_7pridict_good_t *)maxheap_max(__pyx_v_self->_c_maxheap));
+  __pyx_r = ((struct __pyx_t_7pridict_9cypridict_good_t *)maxheap_max(__pyx_v_self->_c_maxheap));
   goto __pyx_L0;
 
-  /* "pridict.pyx":124
+  /* "pridict/cypridict.pyx":124
  * 		return data[0].id
  * 
  * 	cdef good_t * _c_peek(self):             # <<<<<<<<<<<<<<
@@ -2834,7 +2832,7 @@ static struct __pyx_t_7pridict_good_t *__pyx_f_7pridict_13priority_dict__c_peek(
   return __pyx_r;
 }
 
-/* "pridict.pyx":127
+/* "pridict/cypridict.pyx":127
  * 		return <good_t*>cypridict.maxheap_max(self._c_maxheap)
  * 
  * 	def peek(self):             # <<<<<<<<<<<<<<
@@ -2843,20 +2841,20 @@ static struct __pyx_t_7pridict_good_t *__pyx_f_7pridict_13priority_dict__c_peek(
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pridict_13priority_dict_11peek(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_7pridict_13priority_dict_11peek(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_11peek(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_11peek(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("peek (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_10peek(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_10peek(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
-  struct __pyx_t_7pridict_good_t *__pyx_v_data;
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_10peek(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
+  struct __pyx_t_7pridict_9cypridict_good_t *__pyx_v_data;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -2866,16 +2864,16 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7prid
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("peek", 0);
 
-  /* "pridict.pyx":128
+  /* "pridict/cypridict.pyx":128
  * 
  * 	def peek(self):
  * 		cdef good_t *data = self._c_peek()             # <<<<<<<<<<<<<<
  * 		if data is NULL:
  * 			return -1
  */
-  __pyx_v_data = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_peek(__pyx_v_self);
+  __pyx_v_data = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_peek(__pyx_v_self);
 
-  /* "pridict.pyx":129
+  /* "pridict/cypridict.pyx":129
  * 	def peek(self):
  * 		cdef good_t *data = self._c_peek()
  * 		if data is NULL:             # <<<<<<<<<<<<<<
@@ -2885,7 +2883,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7prid
   __pyx_t_1 = ((__pyx_v_data == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "pridict.pyx":130
+    /* "pridict/cypridict.pyx":130
  * 		cdef good_t *data = self._c_peek()
  * 		if data is NULL:
  * 			return -1             # <<<<<<<<<<<<<<
@@ -2897,7 +2895,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7prid
     __pyx_r = __pyx_int_neg_1;
     goto __pyx_L0;
 
-    /* "pridict.pyx":129
+    /* "pridict/cypridict.pyx":129
  * 	def peek(self):
  * 		cdef good_t *data = self._c_peek()
  * 		if data is NULL:             # <<<<<<<<<<<<<<
@@ -2906,7 +2904,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7prid
  */
   }
 
-  /* "pridict.pyx":132
+  /* "pridict/cypridict.pyx":132
  * 			return -1
  * 		else:
  * 			return data[0].id             # <<<<<<<<<<<<<<
@@ -2922,7 +2920,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7prid
     goto __pyx_L0;
   }
 
-  /* "pridict.pyx":127
+  /* "pridict/cypridict.pyx":127
  * 		return <good_t*>cypridict.maxheap_max(self._c_maxheap)
  * 
  * 	def peek(self):             # <<<<<<<<<<<<<<
@@ -2933,7 +2931,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7prid
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("pridict.priority_dict.peek", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.peek", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -2941,7 +2939,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7prid
   return __pyx_r;
 }
 
-/* "pridict.pyx":134
+/* "pridict/cypridict.pyx":134
  * 			return data[0].id
  * 
  * 	def peekval(self):             # <<<<<<<<<<<<<<
@@ -2950,20 +2948,20 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_10peek(struct __pyx_obj_7prid
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pridict_13priority_dict_13peekval(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_7pridict_13priority_dict_13peekval(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_13peekval(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_13peekval(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("peekval (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_12peekval(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_12peekval(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
-  struct __pyx_t_7pridict_good_t *__pyx_v_data;
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_12peekval(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
+  struct __pyx_t_7pridict_9cypridict_good_t *__pyx_v_data;
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -2973,16 +2971,16 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7p
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("peekval", 0);
 
-  /* "pridict.pyx":135
+  /* "pridict/cypridict.pyx":135
  * 
  * 	def peekval(self):
  * 		cdef good_t *data = self._c_peek()             # <<<<<<<<<<<<<<
  * 		if data is NULL:
  * 			return -1
  */
-  __pyx_v_data = ((struct __pyx_vtabstruct_7pridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_peek(__pyx_v_self);
+  __pyx_v_data = ((struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict *)__pyx_v_self->__pyx_vtab)->_c_peek(__pyx_v_self);
 
-  /* "pridict.pyx":136
+  /* "pridict/cypridict.pyx":136
  * 	def peekval(self):
  * 		cdef good_t *data = self._c_peek()
  * 		if data is NULL:             # <<<<<<<<<<<<<<
@@ -2992,7 +2990,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7p
   __pyx_t_1 = ((__pyx_v_data == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "pridict.pyx":137
+    /* "pridict/cypridict.pyx":137
  * 		cdef good_t *data = self._c_peek()
  * 		if data is NULL:
  * 			return -1             # <<<<<<<<<<<<<<
@@ -3004,7 +3002,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7p
     __pyx_r = __pyx_int_neg_1;
     goto __pyx_L0;
 
-    /* "pridict.pyx":136
+    /* "pridict/cypridict.pyx":136
  * 	def peekval(self):
  * 		cdef good_t *data = self._c_peek()
  * 		if data is NULL:             # <<<<<<<<<<<<<<
@@ -3013,7 +3011,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7p
  */
   }
 
-  /* "pridict.pyx":139
+  /* "pridict/cypridict.pyx":139
  * 			return -1
  * 		else:
  * 			return data[0].priority             # <<<<<<<<<<<<<<
@@ -3029,7 +3027,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7p
     goto __pyx_L0;
   }
 
-  /* "pridict.pyx":134
+  /* "pridict/cypridict.pyx":134
  * 			return data[0].id
  * 
  * 	def peekval(self):             # <<<<<<<<<<<<<<
@@ -3040,7 +3038,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7p
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("pridict.priority_dict.peekval", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.peekval", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3048,7 +3046,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7p
   return __pyx_r;
 }
 
-/* "pridict.pyx":141
+/* "pridict/cypridict.pyx":141
  * 			return data[0].priority
  * 
  * 	def __len__(self):             # <<<<<<<<<<<<<<
@@ -3057,19 +3055,19 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_12peekval(struct __pyx_obj_7p
  */
 
 /* Python wrapper */
-static Py_ssize_t __pyx_pw_7pridict_13priority_dict_15__len__(PyObject *__pyx_v_self); /*proto*/
-static Py_ssize_t __pyx_pw_7pridict_13priority_dict_15__len__(PyObject *__pyx_v_self) {
+static Py_ssize_t __pyx_pw_7pridict_9cypridict_13priority_dict_15__len__(PyObject *__pyx_v_self); /*proto*/
+static Py_ssize_t __pyx_pw_7pridict_9cypridict_13priority_dict_15__len__(PyObject *__pyx_v_self) {
   Py_ssize_t __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__len__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_14__len__(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_14__len__(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static Py_ssize_t __pyx_pf_7pridict_13priority_dict_14__len__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static Py_ssize_t __pyx_pf_7pridict_9cypridict_13priority_dict_14__len__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   Py_ssize_t __pyx_r;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3079,7 +3077,7 @@ static Py_ssize_t __pyx_pf_7pridict_13priority_dict_14__len__(struct __pyx_obj_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__len__", 0);
 
-  /* "pridict.pyx":142
+  /* "pridict/cypridict.pyx":142
  * 
  * 	def __len__(self):
  * 		return len(self.priorities)             # <<<<<<<<<<<<<<
@@ -3097,7 +3095,7 @@ static Py_ssize_t __pyx_pf_7pridict_13priority_dict_14__len__(struct __pyx_obj_7
   __pyx_r = __pyx_t_2;
   goto __pyx_L0;
 
-  /* "pridict.pyx":141
+  /* "pridict/cypridict.pyx":141
  * 			return data[0].priority
  * 
  * 	def __len__(self):             # <<<<<<<<<<<<<<
@@ -3108,14 +3106,14 @@ static Py_ssize_t __pyx_pf_7pridict_13priority_dict_14__len__(struct __pyx_obj_7
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pridict.priority_dict.__len__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.__len__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pridict.pyx":144
+/* "pridict/cypridict.pyx":144
  * 		return len(self.priorities)
  * 
  * 	def heap_size(self):             # <<<<<<<<<<<<<<
@@ -3124,19 +3122,19 @@ static Py_ssize_t __pyx_pf_7pridict_13priority_dict_14__len__(struct __pyx_obj_7
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pridict_13priority_dict_17heap_size(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_7pridict_13priority_dict_17heap_size(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_17heap_size(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_17heap_size(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("heap_size (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_16heap_size(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_16heap_size(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pridict_13priority_dict_16heap_size(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_16heap_size(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3145,7 +3143,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_16heap_size(struct __pyx_obj_
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("heap_size", 0);
 
-  /* "pridict.pyx":145
+  /* "pridict/cypridict.pyx":145
  * 
  * 	def heap_size(self):
  * 		return self.length             # <<<<<<<<<<<<<<
@@ -3159,7 +3157,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_16heap_size(struct __pyx_obj_
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pridict.pyx":144
+  /* "pridict/cypridict.pyx":144
  * 		return len(self.priorities)
  * 
  * 	def heap_size(self):             # <<<<<<<<<<<<<<
@@ -3170,7 +3168,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_16heap_size(struct __pyx_obj_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pridict.priority_dict.heap_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.heap_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3178,7 +3176,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_16heap_size(struct __pyx_obj_
   return __pyx_r;
 }
 
-/* "pridict.pyx":147
+/* "pridict/cypridict.pyx":147
  * 		return self.length
  * 
  * 	def __iter__(self):             # <<<<<<<<<<<<<<
@@ -3186,19 +3184,19 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_16heap_size(struct __pyx_obj_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pridict_13priority_dict_19__iter__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_7pridict_13priority_dict_19__iter__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_19__iter__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_19__iter__(PyObject *__pyx_v_self) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__iter__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_18__iter__(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_18__iter__(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pridict_13priority_dict_18__iter__(struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_18__iter__(struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3208,7 +3206,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_18__iter__(struct __pyx_obj_7
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__iter__", 0);
 
-  /* "pridict.pyx":148
+  /* "pridict/cypridict.pyx":148
  * 
  * 	def __iter__(self):
  * 		return iter(self.priorities.items())             # <<<<<<<<<<<<<<
@@ -3227,7 +3225,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_18__iter__(struct __pyx_obj_7
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "pridict.pyx":147
+  /* "pridict/cypridict.pyx":147
  * 		return self.length
  * 
  * 	def __iter__(self):             # <<<<<<<<<<<<<<
@@ -3238,7 +3236,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_18__iter__(struct __pyx_obj_7
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("pridict.priority_dict.__iter__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.__iter__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -3253,19 +3251,19 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_18__iter__(struct __pyx_obj_7
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pridict_13priority_dict_21__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_7pridict_13priority_dict_21__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_21__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_21__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_20__reduce_cython__(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_20__reduce_cython__(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pridict_13priority_dict_20__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_7pridict_priority_dict *__pyx_v_self) {
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_20__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3295,7 +3293,7 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_20__reduce_cython__(CYTHON_UN
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pridict.priority_dict.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -3310,19 +3308,19 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_20__reduce_cython__(CYTHON_UN
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_7pridict_13priority_dict_23__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_7pridict_13priority_dict_23__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_23__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_7pridict_9cypridict_13priority_dict_23__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_7pridict_13priority_dict_22__setstate_cython__(((struct __pyx_obj_7pridict_priority_dict *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_7pridict_9cypridict_13priority_dict_22__setstate_cython__(((struct __pyx_obj_7pridict_9cypridict_priority_dict *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_7pridict_13priority_dict_22__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_7pridict_priority_dict *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_7pridict_9cypridict_13priority_dict_22__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_7pridict_9cypridict_priority_dict *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -3352,16 +3350,16 @@ static PyObject *__pyx_pf_7pridict_13priority_dict_22__setstate_cython__(CYTHON_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pridict.priority_dict.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("pridict.cypridict.priority_dict.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_7pridict_priority_dict __pyx_vtable_7pridict_priority_dict;
+static struct __pyx_vtabstruct_7pridict_9cypridict_priority_dict __pyx_vtable_7pridict_9cypridict_priority_dict;
 
-static PyObject *__pyx_tp_new_7pridict_priority_dict(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_7pridict_priority_dict *p;
+static PyObject *__pyx_tp_new_7pridict_9cypridict_priority_dict(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_7pridict_9cypridict_priority_dict *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -3369,18 +3367,18 @@ static PyObject *__pyx_tp_new_7pridict_priority_dict(PyTypeObject *t, CYTHON_UNU
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_7pridict_priority_dict *)o);
-  p->__pyx_vtab = __pyx_vtabptr_7pridict_priority_dict;
+  p = ((struct __pyx_obj_7pridict_9cypridict_priority_dict *)o);
+  p->__pyx_vtab = __pyx_vtabptr_7pridict_9cypridict_priority_dict;
   p->priorities = ((PyObject*)Py_None); Py_INCREF(Py_None);
-  if (unlikely(__pyx_pw_7pridict_13priority_dict_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
+  if (unlikely(__pyx_pw_7pridict_9cypridict_13priority_dict_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_7pridict_priority_dict(PyObject *o) {
-  struct __pyx_obj_7pridict_priority_dict *p = (struct __pyx_obj_7pridict_priority_dict *)o;
+static void __pyx_tp_dealloc_7pridict_9cypridict_priority_dict(PyObject *o) {
+  struct __pyx_obj_7pridict_9cypridict_priority_dict *p = (struct __pyx_obj_7pridict_9cypridict_priority_dict *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -3391,7 +3389,7 @@ static void __pyx_tp_dealloc_7pridict_priority_dict(PyObject *o) {
     PyObject *etype, *eval, *etb;
     PyErr_Fetch(&etype, &eval, &etb);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) + 1);
-    __pyx_pw_7pridict_13priority_dict_3__dealloc__(o);
+    __pyx_pw_7pridict_9cypridict_13priority_dict_3__dealloc__(o);
     __Pyx_SET_REFCNT(o, Py_REFCNT(o) - 1);
     PyErr_Restore(etype, eval, etb);
   }
@@ -3399,27 +3397,27 @@ static void __pyx_tp_dealloc_7pridict_priority_dict(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_7pridict_priority_dict(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_7pridict_9cypridict_priority_dict(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_7pridict_priority_dict *p = (struct __pyx_obj_7pridict_priority_dict *)o;
+  struct __pyx_obj_7pridict_9cypridict_priority_dict *p = (struct __pyx_obj_7pridict_9cypridict_priority_dict *)o;
   if (p->priorities) {
     e = (*v)(p->priorities, a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_7pridict_priority_dict(PyObject *o) {
+static int __pyx_tp_clear_7pridict_9cypridict_priority_dict(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_7pridict_priority_dict *p = (struct __pyx_obj_7pridict_priority_dict *)o;
+  struct __pyx_obj_7pridict_9cypridict_priority_dict *p = (struct __pyx_obj_7pridict_9cypridict_priority_dict *)o;
   tmp = ((PyObject*)p->priorities);
   p->priorities = ((PyObject*)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static int __pyx_mp_ass_subscript_7pridict_priority_dict(PyObject *o, PyObject *i, PyObject *v) {
+static int __pyx_mp_ass_subscript_7pridict_9cypridict_priority_dict(PyObject *o, PyObject *i, PyObject *v) {
   if (v) {
-    return __pyx_pw_7pridict_13priority_dict_7__setitem__(o, i, v);
+    return __pyx_pw_7pridict_9cypridict_13priority_dict_7__setitem__(o, i, v);
   }
   else {
     PyErr_Format(PyExc_NotImplementedError,
@@ -3428,18 +3426,18 @@ static int __pyx_mp_ass_subscript_7pridict_priority_dict(PyObject *o, PyObject *
   }
 }
 
-static PyMethodDef __pyx_methods_7pridict_priority_dict[] = {
-  {"pop", (PyCFunction)__pyx_pw_7pridict_13priority_dict_9pop, METH_NOARGS, 0},
-  {"peek", (PyCFunction)__pyx_pw_7pridict_13priority_dict_11peek, METH_NOARGS, 0},
-  {"peekval", (PyCFunction)__pyx_pw_7pridict_13priority_dict_13peekval, METH_NOARGS, 0},
-  {"heap_size", (PyCFunction)__pyx_pw_7pridict_13priority_dict_17heap_size, METH_NOARGS, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_7pridict_13priority_dict_21__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_7pridict_13priority_dict_23__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_7pridict_9cypridict_priority_dict[] = {
+  {"pop", (PyCFunction)__pyx_pw_7pridict_9cypridict_13priority_dict_9pop, METH_NOARGS, 0},
+  {"peek", (PyCFunction)__pyx_pw_7pridict_9cypridict_13priority_dict_11peek, METH_NOARGS, 0},
+  {"peekval", (PyCFunction)__pyx_pw_7pridict_9cypridict_13priority_dict_13peekval, METH_NOARGS, 0},
+  {"heap_size", (PyCFunction)__pyx_pw_7pridict_9cypridict_13priority_dict_17heap_size, METH_NOARGS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_7pridict_9cypridict_13priority_dict_21__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_7pridict_9cypridict_13priority_dict_23__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
 static PySequenceMethods __pyx_tp_as_sequence_priority_dict = {
-  __pyx_pw_7pridict_13priority_dict_15__len__, /*sq_length*/
+  __pyx_pw_7pridict_9cypridict_13priority_dict_15__len__, /*sq_length*/
   0, /*sq_concat*/
   0, /*sq_repeat*/
   0, /*sq_item*/
@@ -3452,17 +3450,17 @@ static PySequenceMethods __pyx_tp_as_sequence_priority_dict = {
 };
 
 static PyMappingMethods __pyx_tp_as_mapping_priority_dict = {
-  __pyx_pw_7pridict_13priority_dict_15__len__, /*mp_length*/
+  __pyx_pw_7pridict_9cypridict_13priority_dict_15__len__, /*mp_length*/
   0, /*mp_subscript*/
-  __pyx_mp_ass_subscript_7pridict_priority_dict, /*mp_ass_subscript*/
+  __pyx_mp_ass_subscript_7pridict_9cypridict_priority_dict, /*mp_ass_subscript*/
 };
 
-static PyTypeObject __pyx_type_7pridict_priority_dict = {
+static PyTypeObject __pyx_type_7pridict_9cypridict_priority_dict = {
   PyVarObject_HEAD_INIT(0, 0)
-  "pridict.priority_dict", /*tp_name*/
-  sizeof(struct __pyx_obj_7pridict_priority_dict), /*tp_basicsize*/
+  "pridict.cypridict.priority_dict", /*tp_name*/
+  sizeof(struct __pyx_obj_7pridict_9cypridict_priority_dict), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_7pridict_priority_dict, /*tp_dealloc*/
+  __pyx_tp_dealloc_7pridict_9cypridict_priority_dict, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -3489,13 +3487,13 @@ static PyTypeObject __pyx_type_7pridict_priority_dict = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_7pridict_priority_dict, /*tp_traverse*/
-  __pyx_tp_clear_7pridict_priority_dict, /*tp_clear*/
+  __pyx_tp_traverse_7pridict_9cypridict_priority_dict, /*tp_traverse*/
+  __pyx_tp_clear_7pridict_9cypridict_priority_dict, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
-  __pyx_pw_7pridict_13priority_dict_19__iter__, /*tp_iter*/
+  __pyx_pw_7pridict_9cypridict_13priority_dict_19__iter__, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_7pridict_priority_dict, /*tp_methods*/
+  __pyx_methods_7pridict_9cypridict_priority_dict, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -3503,9 +3501,9 @@ static PyTypeObject __pyx_type_7pridict_priority_dict = {
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_7pridict_13priority_dict_5__init__, /*tp_init*/
+  __pyx_pw_7pridict_9cypridict_13priority_dict_5__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_7pridict_priority_dict, /*tp_new*/
+  __pyx_tp_new_7pridict_9cypridict_priority_dict, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -3536,17 +3534,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_pridict(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_cypridict(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_pridict},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_cypridict},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "pridict",
+    "cypridict",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -3681,24 +3679,24 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_7pridict_priority_dict = &__pyx_vtable_7pridict_priority_dict;
-  __pyx_vtable_7pridict_priority_dict._create_heap = (PyObject *(*)(struct __pyx_obj_7pridict_priority_dict *))__pyx_f_7pridict_13priority_dict__create_heap;
-  __pyx_vtable_7pridict_priority_dict._dealloc_heap = (PyObject *(*)(struct __pyx_obj_7pridict_priority_dict *))__pyx_f_7pridict_13priority_dict__dealloc_heap;
-  __pyx_vtable_7pridict_priority_dict._rebuild_heap = (PyObject *(*)(struct __pyx_obj_7pridict_priority_dict *))__pyx_f_7pridict_13priority_dict__rebuild_heap;
-  __pyx_vtable_7pridict_priority_dict._c_push = (void (*)(struct __pyx_obj_7pridict_priority_dict *, void *))__pyx_f_7pridict_13priority_dict__c_push;
-  __pyx_vtable_7pridict_priority_dict._c_pop = (struct __pyx_t_7pridict_good_t *(*)(struct __pyx_obj_7pridict_priority_dict *))__pyx_f_7pridict_13priority_dict__c_pop;
-  __pyx_vtable_7pridict_priority_dict._c_peek = (struct __pyx_t_7pridict_good_t *(*)(struct __pyx_obj_7pridict_priority_dict *))__pyx_f_7pridict_13priority_dict__c_peek;
-  if (PyType_Ready(&__pyx_type_7pridict_priority_dict) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_vtabptr_7pridict_9cypridict_priority_dict = &__pyx_vtable_7pridict_9cypridict_priority_dict;
+  __pyx_vtable_7pridict_9cypridict_priority_dict._create_heap = (PyObject *(*)(struct __pyx_obj_7pridict_9cypridict_priority_dict *))__pyx_f_7pridict_9cypridict_13priority_dict__create_heap;
+  __pyx_vtable_7pridict_9cypridict_priority_dict._dealloc_heap = (PyObject *(*)(struct __pyx_obj_7pridict_9cypridict_priority_dict *))__pyx_f_7pridict_9cypridict_13priority_dict__dealloc_heap;
+  __pyx_vtable_7pridict_9cypridict_priority_dict._rebuild_heap = (PyObject *(*)(struct __pyx_obj_7pridict_9cypridict_priority_dict *))__pyx_f_7pridict_9cypridict_13priority_dict__rebuild_heap;
+  __pyx_vtable_7pridict_9cypridict_priority_dict._c_push = (void (*)(struct __pyx_obj_7pridict_9cypridict_priority_dict *, void *))__pyx_f_7pridict_9cypridict_13priority_dict__c_push;
+  __pyx_vtable_7pridict_9cypridict_priority_dict._c_pop = (struct __pyx_t_7pridict_9cypridict_good_t *(*)(struct __pyx_obj_7pridict_9cypridict_priority_dict *))__pyx_f_7pridict_9cypridict_13priority_dict__c_pop;
+  __pyx_vtable_7pridict_9cypridict_priority_dict._c_peek = (struct __pyx_t_7pridict_9cypridict_good_t *(*)(struct __pyx_obj_7pridict_9cypridict_priority_dict *))__pyx_f_7pridict_9cypridict_13priority_dict__c_peek;
+  if (PyType_Ready(&__pyx_type_7pridict_9cypridict_priority_dict) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_7pridict_priority_dict.tp_print = 0;
+  __pyx_type_7pridict_9cypridict_priority_dict.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_7pridict_priority_dict.tp_dictoffset && __pyx_type_7pridict_priority_dict.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_7pridict_priority_dict.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_7pridict_9cypridict_priority_dict.tp_dictoffset && __pyx_type_7pridict_9cypridict_priority_dict.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_7pridict_9cypridict_priority_dict.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_7pridict_priority_dict.tp_dict, __pyx_vtabptr_7pridict_priority_dict) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_priority_dict, (PyObject *)&__pyx_type_7pridict_priority_dict) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_7pridict_priority_dict) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
-  __pyx_ptype_7pridict_priority_dict = &__pyx_type_7pridict_priority_dict;
+  if (__Pyx_SetVtable(__pyx_type_7pridict_9cypridict_priority_dict.tp_dict, __pyx_vtabptr_7pridict_9cypridict_priority_dict) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_priority_dict, (PyObject *)&__pyx_type_7pridict_9cypridict_priority_dict) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_7pridict_9cypridict_priority_dict) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_ptype_7pridict_9cypridict_priority_dict = &__pyx_type_7pridict_9cypridict_priority_dict;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -3749,11 +3747,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initpridict(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initpridict(void)
+__Pyx_PyMODINIT_FUNC initcypridict(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initcypridict(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_pridict(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_pridict(void)
+__Pyx_PyMODINIT_FUNC PyInit_cypridict(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_cypridict(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -3820,7 +3818,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_pridict(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_cypridict(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -3832,7 +3830,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_pridict(PyObject *__pyx_pyinit_mod
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'pridict' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'cypridict' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -3847,7 +3845,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_pridict(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_cypridict(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -3884,7 +3882,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("pridict", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("cypridict", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -3902,14 +3900,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_pridict) {
+  if (__pyx_module_is_main_pridict__cypridict) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "pridict")) {
-      if (unlikely(PyDict_SetItemString(modules, "pridict", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "pridict.cypridict")) {
+      if (unlikely(PyDict_SetItemString(modules, "pridict.cypridict", __pyx_m) < 0)) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -3930,7 +3928,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pridict.pyx":1
+  /* "pridict/cypridict.pyx":1
  * # cython: language_level=3, initializedcheck=False, nonecheck=False             # <<<<<<<<<<<<<<
  * # distutils: sources = array.c, maxheap.c
  * cimport pridict.cypridict as cypridict # import the declaration in cypridict.pxd
@@ -3947,11 +3945,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init pridict", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init pridict.cypridict", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init pridict");
+    PyErr_SetString(PyExc_ImportError, "init pridict.cypridict");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
