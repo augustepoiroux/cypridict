@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pridict"
+version = "1.0.0"
+authors = []
+description = "Priority dictionary using efficient C heap"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/augustepoiroux/cypridict"
+"Bug Tracker" = "https://github.com/augustepoiroux/cypridict/issues"

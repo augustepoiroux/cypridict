@@ -1,6 +1,6 @@
 import pytest
 
-from .pridict import priority_dict
+from pridict import priority_dict
 
 
 class TestPriDict:

@@ -1,17 +1,20 @@
-from distutils.core import setup
-from distutils.extension import Extension
+from setuptools import setup, Extension, find_packages
 
 from Cython.Distutils import build_ext
 
-ext_modules = [
-    Extension(
-        name="pridict",
-        sources=["cypridict.pyx", "array.c", "maxheap.c"],
-    )
-]
-
 setup(
-    name="Priority Dictionary build on a max heap.",
     cmdclass={"build_ext": build_ext},
-    ext_modules=ext_modules,
+    ext_modules=[
+        Extension(
+            name="pridict",
+            sources=[
+                "src/pridict/cypridict.pyx",
+                "src/pridict/array.c",
+                "src/pridict/maxheap.c",
+            ],
+        )
+    ],
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
+    package_data={"pridict": ["*.h", "*.pxd", "py.typed", "*.pyi"]},
 )
