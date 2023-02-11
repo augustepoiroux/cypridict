@@ -5,12 +5,8 @@ from Cython.Distutils import build_ext
 
 ext_modules = [
     Extension(
-        "pridict",
-        ["cypridict.pyx"],
-        libraries=["maxheap"],
-        library_dirs=["/usr/local/lib"],
-        include_dirs=["/usr/local/include"],
-        runtime_library_dirs=["/usr/local/lib"],
+        name="pridict",
+        sources=["cypridict.pyx", "array.c", "maxheap.c"],
     )
 ]
 

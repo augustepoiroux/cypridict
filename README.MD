@@ -1,3 +1,3 @@
 # Installation
 
-Run the script `install.sh` to install this package.
+Run the command `python setup.py build_ext --inplace` to install this package.
